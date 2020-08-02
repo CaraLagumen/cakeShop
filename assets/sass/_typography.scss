@@ -1,0 +1,53 @@
+*:disabled {
+}
+
+a {
+  &,
+  &:link,
+  &:visited {
+    color: #552e1f;
+    text-decoration: none;
+
+    &:hover {
+      color: #e27976;
+    }
+  }
+}
+
+button,
+select {
+  border: none;
+
+  background: none;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+::selection {
+  color: white;
+  background-color: #552e1f;
+}
