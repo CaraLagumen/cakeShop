@@ -21,10 +21,21 @@
 
       <h3 class="header__links--item">
         <nuxt-link to="/cart">Cart</nuxt-link>
+        <span>{{ cartItems.length }}</span>
       </h3>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    cartItems() {
+      return this.$store.getters.cartItems;
+    },
+  },
+};
+</script>
 
 <style lang="scss">
 .header {
@@ -52,6 +63,18 @@
     justify-content: space-between;
 
     width: 60vw;
+
+    @media only screen and (max-width: 86em) {
+      //1366W
+      width: 80vw;
+    }
+
+    &--item span {
+      padding: 0.3rem 0.6rem;
+
+      background-color: #552e1f;
+      color: white;
+    }
   }
 }
 </style>

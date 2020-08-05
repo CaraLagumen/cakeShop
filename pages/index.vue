@@ -5,7 +5,10 @@
         <h3>As seen</h3>
         <h4>on Food Network</h4>
       </div>
-      <img src="@/assets/img/cake2.jpg" class="home__tile--img" />
+      <img
+        src="@/assets/img/cake2.jpg"
+        class="home__tile--img"
+      />
     </div>
 
     <div class="home__tile tile-2">
@@ -13,7 +16,10 @@
         <h3>Easy online ordering</h3>
         <h4>cakes, cake pops, cupcakes, and more</h4>
       </div>
-      <img src="@/assets/img/cake1.jpg" class="home__tile--img" />
+      <img
+        src="@/assets/img/cake1.jpg"
+        class="home__tile--img"
+      />
     </div>
 
     <div class="home__tile tile-3">
@@ -21,7 +27,10 @@
         <h3>Custom cakes</h3>
         <h4>birthdays, weddings, and more</h4>
       </div>
-      <img src="@/assets/img/cake3.jpg" class="home__tile--img" />
+      <img
+        src="@/assets/img/cake3.jpg"
+        class="home__tile--img"
+      />
     </div>
 
     <div class="home__tile tile-4">
@@ -29,7 +38,10 @@
         <h3>Now open</h3>
         <h4>in Las Vegas</h4>
       </div>
-      <img src="@/assets/img/cake4.jpg" class="home__tile--img" />
+      <img
+        src="@/assets/img/cake4.jpg"
+        class="home__tile--img"
+      />
     </div>
   </div>
 </template>
@@ -54,6 +66,11 @@ export default {};
   width: 60vw;
   padding: 1rem 2rem;
 
+  @media only screen and (max-width: 86em) {
+    //1366W
+    width: 90vw;
+  }
+
   &__tile {
     display: grid;
     align-items: center;
@@ -70,7 +87,7 @@ export default {};
 
       padding: 0.5rem 1rem;
 
-      background-color: #77bee7;
+      background-color: #e27976;
       opacity: 0.9;
       color: white;
       text-align: center;
